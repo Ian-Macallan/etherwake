@@ -1,0 +1,2 @@
+# etherwake
+Wake Lan Devices
