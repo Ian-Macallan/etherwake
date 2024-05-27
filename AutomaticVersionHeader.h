@@ -5,7 +5,7 @@
 //
 //	(c) 2003 - 2024 Macallan - mailto:ian.macallan@gmail.com
 //
-//	Generated : 27/05/2024 15:19:12
+//	Generated : 27/05/2024 15:26:29
 //
 //===========================================================================================
 //
@@ -54,22 +54,22 @@
 #endif
 
 #ifdef UNICODE
-#define PROGRAM_DATE    L"Mon May 27 15:19"
-#define PROGRAM_DATE_F  L"Mon May 27 15:19 2024"
+#define PROGRAM_DATE    L"Mon May 27 15:26"
+#define PROGRAM_DATE_F  L"Mon May 27 15:26 2024"
 #define PROGRAM_YEAR    L"2024"
-#define PROGRAM_TIME    L"2024/05/27 15:19:12"
+#define PROGRAM_TIME    L"2024/05/27 15:26:29"
 #else
-#define PROGRAM_DATE    "Mon May 27 15:19"
-#define PROGRAM_DATE_F  "Mon May 27 15:19 2024"
+#define PROGRAM_DATE    "Mon May 27 15:26"
+#define PROGRAM_DATE_F  "Mon May 27 15:26 2024"
 #define PROGRAM_YEAR    "2024"
-#define PROGRAM_TIME    "2024/05/27 15:19:12"
+#define PROGRAM_TIME    "2024/05/27 15:26:29"
 #endif
 
 #ifdef UNICODE
-#define PROGRAM_VERSION L"1.0.04.004"
-#define PROGRAM_INSTALL L"1.0.04004"
-#define PROGRAM_VER_NUM 10004004
-#define PROGRAM_BUILD   L"74"
+#define PROGRAM_VERSION L"1.0.04.005"
+#define PROGRAM_INSTALL L"1.0.04005"
+#define PROGRAM_VER_NUM 10004005
+#define PROGRAM_BUILD   L"75"
 #define PROGRAM_TITLE   L"etherwake"
 #ifdef _WIN64
 #define PROGRAM_TITLE_P L"etherwake (x64 Unicode)"
@@ -77,10 +77,10 @@
 #define PROGRAM_TITLE_P L"etherwake (x86 Unicode)"
 #endif
 #else
-#define PROGRAM_VERSION "1.0.04.004"
-#define PROGRAM_INSTALL "1.0.04004"
-#define PROGRAM_VER_NUM 10004004
-#define PROGRAM_BUILD   "74"
+#define PROGRAM_VERSION "1.0.04.005"
+#define PROGRAM_INSTALL "1.0.04005"
+#define PROGRAM_VER_NUM 10004005
+#define PROGRAM_BUILD   "75"
 #define PROGRAM_TITLE   "etherwake"
 #ifdef _WIN64
 #define PROGRAM_TITLE_P "etherwake (x64 MBCS)"
