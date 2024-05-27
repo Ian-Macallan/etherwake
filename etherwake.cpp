@@ -454,8 +454,17 @@ int PingAddress ( WCHAR *pIPAddress )
 			{    
 				PrintVerbose ( L"< Received %ld icmp message response - Information from this response - ", dwRetVal);
 			}
-#if _MSC_VER < 1800
+#if _MSC_VER < 1 // 1800
 			PrintVerboseA ( "Received from %s\n", inet_ntoa( ReplyAddr ) );
+#else
+            WCHAR szAddress [ 64 ];
+            PCTSTR lpwStr = InetNtop(
+                AF_INET,                // _In_   INT  Family,
+                (PVOID) &ReplyAddr,     // _In_   PVOID pAddr,
+                szAddress,              //   _Out_  PTSTR pStringBuf,
+                _wsizeof(szAddress)     //  _In_   size_t StringBufSize
+            );
+            PrintVerboseW ( L"Received from %s\n", szAddress );
 #endif
 			PrintVerbose ( L"< Status = %ld - Roundtrip time = %ld milliseconds\n", pEchoReply->Status, pEchoReply->RoundTripTime);
 		}
