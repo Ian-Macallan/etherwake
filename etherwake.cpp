@@ -27,8 +27,6 @@
 #define LEN_TEXT_1024	1024
 #define LEN_TEXT_8192	8192
 
-#define _WINSOCK_DEPRECATED_NO_WARNINGS
-
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //
@@ -455,8 +453,10 @@ int PingAddress ( WCHAR *pIPAddress )
 			else
 			{    
 				PrintVerbose ( L"< Received %ld icmp message response - Information from this response - ", dwRetVal);
-			}    
+			}
+#if _MSC_VER < 1800
 			PrintVerboseA ( "Received from %s\n", inet_ntoa( ReplyAddr ) );
+#endif
 			PrintVerbose ( L"< Status = %ld - Roundtrip time = %ld milliseconds\n", pEchoReply->Status, pEchoReply->RoundTripTime);
 		}
 		else
