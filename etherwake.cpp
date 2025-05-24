@@ -3180,7 +3180,7 @@ void GetSubnets()
         PIP_ADAPTER_INFO pAdapterInfo = AdapterInfo;
         for ( pAdapterInfo = AdapterInfo; pAdapterInfo != NULL; pAdapterInfo = pAdapterInfo->Next )
         {
-            if ( MacIsNotNull ( pAdapterInfo->Address ) )
+            // if ( MacIsNotNull ( pAdapterInfo->Address ) )
             {
                 MacAddressToString ( pAdapterInfo->Address, pAdapterInfo->AddressLength );
 
@@ -3922,6 +3922,7 @@ int PrintHelp(int iArgCount, WCHAR* pArgValues[], bool bLong )
         PrintHelpLine ( iWidth, L"-querytype t", L"query type (PTR...)" );
     }
     PrintHelpLine ( iWidth, L"-subnet", L"Send wake to a specific subnet" );
+    PrintHelpLine ( iWidth, L"", L"The default is to send thru all subnet and thru broadcast address" );
     PrintHelpLine ( iWidth, L"-wake", L"wake MAC Address (optional)" );
     PrintHelpLine ( );
 
