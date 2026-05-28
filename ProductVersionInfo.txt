@@ -1,4 +1,4 @@
-1.0.4.16
+1.0.4.17
 etherwake
-etherwake (x86) : Sat Jan 24 13:27 1.0.4.16
-etherwake (x64) : Sat Jan 24 13:27 1.0.4.16
+etherwake (x86) : Thu May 28 13:13 1.0.4.17
+etherwake (x64) : Thu May 28 13:13 1.0.4.17
